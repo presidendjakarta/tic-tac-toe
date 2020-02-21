@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe game</title>
+  <link href='https://getbootstrap.com/2.3.2/assets/css/bootstrap.css' rel='stylesheet prefetch'>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="tic-tac-toe">
+    <div class="span3 new_span">
+      <div class="row">
+        <h1 class="span3">Tic Tac Toe</h1>
+        <div class="span3">
+          <span><center><h5>O is a computer</h5></center></span>
+          <div class="input-prepend input-append">
+            <span class="add-on win_text">O won</span><strong class="win_times add-on" id="o_win">0</strong><span class="add-on">time(s)</span>
+          </div>
+          <div class="input-prepend input-append">
+            <span class="add-on win_text">X won</span><strong class="win_times add-on" id="x_win">0</strong><span class="add-on">time(s)</span>
+          </div>
+          <div class="input-prepend input-append" id="papanInfo" style="font-size: 17px; padding: 5px; width: 98%; border-radius: 3px; border: solid 1px #CCCCCC;">
+          	Turn Play : <span id="currentPlayer" style="font-weight: bolder; text-transform: uppercase;" ></span>
+          </div>
+        </div>
+      </div>
+
+      <ul class="row" id="game">
+
+      </ul>
+      <div class="clr">
+        &nbsp;
+      </div>
+      <div class="row">
+        <input type="button" class="btn-success btn span3" href="#" id="reset" value="start">
+      </div>
+    </div>
+  </div>
+  <script src='https://code.jquery.com/jquery-1.7.2.min.js'>
+  </script> 
+  <script src="com.js">
+  </script>
+</body>
+</html>
